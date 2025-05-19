@@ -1,0 +1,390 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.head{
+    background-color: darkgreen;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head_l{
+
+}
+
+.head_r{
+
+}
+
+
+.head_text{
+    float: left;
+    list-style: none;
+    color: white;
+}
+
+.nav{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+
+
+.nav-a{
+    color: darkslategrey;
+    width: 120px;
+    height: 50px;
+    display: block;
+    padding-left: 40px;
+    padding-top: 18px;
+}
+
+.nav-a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+.nav-a:visited{
+    color: darkslategrey;
+}
+
+.nav_l{
+
+}
+
+.nav_r{
+    padding-bottom: 0;
+}
+
+.nav_text{
+    list-style: none;
+    float: left;
+}
+
+.nav-x{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+.nav_text:hover .nav-list
+{
+    max-height: 300px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: #b2b2b0 0 1px 2px ;
+    transition: .4s;
+}
+
+.nav-list{
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    padding-bottom: 0;
+}
+
+.x-text{
+
+    color: darkslategrey;
+    padding-left: 20px;
+    display: block;
+    width: 100px;
+    z-index: 10;
+}
+
+.bg_img{
+    margin-top: 20px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-float{
+
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1190px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 0;
+    box-shadow: #333 0 0 1px;
+}
+
+.nav-float-show{
+    height: 80px;
+    opacity: 1;
+    z-index: 999;
+    overflow: visible;
+}
+
+.bg{
+    left: 200px;
+    top:calc(120%);
+    position: absolute;
+    display: flex;
+    background-color: white;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bg-title{
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    font-family: "楷体", serif;
+    display: block;
+}
+
+.bg-content{
+    display: block;
+    width: 56%;
+}
+
+.container{
+    top:calc(150%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+.box{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    margin: 20px;
+}
+
+.gif-show:hover .box-list{
+    z-index: 1;
+    opacity: 80%;
+}
+
+
+.box-list {
+    background-color: #333333;
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    border-radius: 10px;
+    z-index: -999;
+    opacity: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -365px;
+}
+
+.box-text{
+    font-family: "楷体", serif;
+    font-size: 30px;
+}
+
+
+.gif{
+    width: 80%;
+    height: 360px;
+}
+
+.footer{
+    position: absolute;
+    top: calc(420%);
+    width: 100%;
+    height: 400px;
+    background-color: #1f2740;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_list{
+    text-decoration: none;
+    color: white;
+    margin: 50px 120px 0 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 100%;
+}
+
+.footer_text{
+    color: white;
+    font-family: "楷体", serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-a:hover{
+    color: darkslategrey;
+}
+
+
+.footer-a:visited{
+    color: white;
+}
+
+/*立春CSS*/
+.nav-all{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1190px;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.5s;
+    padding: 0;
+    background-color: rgb(255,255,255,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-all-show{
+    height: 80px;
+    background-color: rgb(255,255,255);
+}
+
+.main-img-box{
+    height: 600px;
+    width: 90%;
+
+    margin: auto;
+
+}
+
+.solarTerms-img{
+    left: 10%;
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 600px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.solarTerms-img-box{
+    background-color: white;
+    width: 60%;
+    height: 500px;
+    margin:50px 10px 0 100px;
+}
+
+.main-img{
+    height: 500px;
+    margin-left: 300px;
+}
+
+.main-l{
+    position: absolute;
+    background-color: white;
+    width: 59%;
+    height: 1000px;
+    top:124%;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.main-r{
+    background-color: #eaebec;
+    width: 30%;
+    height: 1530px;
+    margin: 50px 100px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.solarTerms-a{
+    position: absolute;
+    left: 42%;
+    top: 15%;
+    font-family: "楷体", serif;
+    font-size: 30px;
+}
+
+.r-title{
+    color: darkslategrey;
+    font-size: 40px;
+
+}
+
+.r-title2{
+    color: darkslategrey;
+    font-size: 30px;
+}
+
+.r-content{
+    color: black;
+    font-size: 20px;
+    font-family: "楷体", serif;
+}
+
+.l-title{
+    color: darkslategrey;
+    font-size: 50px;
+    font-family: "楷体", serif;
+}
+
+.l-content{
+    color: black;
+    font-size: 20px;
+}
+
+.footer-terms{
+    margin: 20px;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #1f2740;
+    display: flex;
+    justify-content: center;
+
+}
